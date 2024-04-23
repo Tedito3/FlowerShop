@@ -1,0 +1,42 @@
+﻿@model FlowerShop3.Models.Flowers
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Flowers</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FlowerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlowerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlowerColour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlowerColour)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlowerAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlowerAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
